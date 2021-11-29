@@ -1,2 +1,2 @@
-# 4.GITHUB
-Es el github del TFI de Juanma
+# 4.HITBUB
+Es el repositorio de todos los .py del TFI

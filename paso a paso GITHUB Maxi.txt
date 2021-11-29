@@ -1,0 +1,23 @@
+subir codigo a github
+hacemos cuenta
+
+3 pasos para actualizar el codigo en github
+1. git add . (el punto hace referencia a todos los files del repositorio - si quiere uno solo *.py)
+2. git commit -m "mensaje"
+3. git push
+
+Para ver el estado de archivos
+1. git status
+
+cuando esta en verde es porque esta trackeado
+cuando esta en rojo no tiene seguimiento -> faltaria aplicar el git add
+
+para bajar del repositorio remoto los cambios git pull origin main
+
+-> libreria auxiliar en jsaon
+--> api
+
+maximiliano.bordon@gmail.com
+
+
+"C:\Users\juanm\Documentos\Personal\1.Projects\4. Data Science - ITBA\11_Trabajo_Final_Integrador"
