@@ -7,11 +7,13 @@ import os
 
 
 datafile = pd.read_csv("C:\\Users\\juanm\\Documentos\\Personal\\1.Projects\\4. Data Science - ITBA\\11_Trabajo_Final_Integrador\\4.GITHUB\\Dataset_v1_boxplot.csv", index_col='#cliente')
-print(datafile)
+#print(datafile)
 #print(datafile.describe())
 #print(datafile["Facturacion"].mean())
 #print(datafile.head())
 #print(type(datafile))
+
+#print(str(datafile))
 
 #datafile.plot(x="Facturacion", y="Margen_s_Facturacion",kind="scatter")
 #"Margen_Bruto", "Facturacion_s_#Producto"]
