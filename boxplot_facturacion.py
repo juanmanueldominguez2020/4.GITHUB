@@ -152,16 +152,15 @@ dataset_Histo_3 = datafile.loc[(datafile['rango_precio'] == 3),'Margen_s_Factura
 dataset_Histo_4 = datafile.loc[(datafile['rango_precio'] == 4),'Margen_s_Facturacion']
 dataset_Histo_5 = datafile.loc[(datafile['rango_precio'] == 5),'Margen_s_Facturacion']
 colors = ["red", "green", "yellow", "blue","brown"]
-plt.hist([dataset_Histo_1, dataset_Histo_2, dataset_Histo_3, dataset_Histo_4, dataset_Histo_5], bins = 20, alpha = 0.5, color=colors)
+plt.hist([dataset_Histo_1, dataset_Histo_2, dataset_Histo_3, dataset_Histo_4, dataset_Histo_5], bins = 20, alpha = 0.5,density=True, color=colors)
 handles = [Rectangle((0,0),1,1,color=c,ec="k") for c in colors]
 labels= ["BAJO","MEDIO-BAJO","MEDIO-ALTO", "ALTO","MIX"]
-plt.legend(handles, labels)
+plt.legend(handles, labels,title="Rango de Precios")
 plt.xlabel('Margen sobre Facturación',fontsize=10)
 plt.ylabel('Frecuencia',fontsize=10)
 plt.xticks(fontsize=8)
 plt.yticks(fontsize=8)
 plt.title("Histograma multiple - Margen sobre Facturacion vs Rango de Precio")
-#plt.hist(dataset_Histo_1, bins = 20, alpha = 0.5)
 plt.show()
 
 print(dataset_Histo_1.describe().round(decimals=0))
