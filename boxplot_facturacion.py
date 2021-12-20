@@ -6,7 +6,7 @@ import os
 from matplotlib.patches import Rectangle
 
 
-datafile = pd.read_csv("C:\\Users\\juanm\\Documentos\\Personal\\1.Projects\\4. Data Science - ITBA\\11_Trabajo_Final_Integrador\\4.GITHUB\\Dataset_v2.csv", index_col='#cliente')
+datafile = pd.read_csv("C:\\Users\\juanm\\Documentos\\Personal\\1.Projects\\4. Data Science - ITBA\\11_Trabajo_Final_Integrador\\4.GITHUB\\Dataset_v3.csv", index_col='#cliente')
 #print(datafile)
 #print(datafile.describe())
 #print(datafile["Facturacion"].mean())
@@ -150,10 +150,11 @@ dataset_Histo_1 = datafile.loc[(datafile['rango_precio'] == 1),'Margen_s_Factura
 dataset_Histo_2 = datafile.loc[(datafile['rango_precio'] == 2),'Margen_s_Facturacion']
 dataset_Histo_3 = datafile.loc[(datafile['rango_precio'] == 3),'Margen_s_Facturacion']
 dataset_Histo_4 = datafile.loc[(datafile['rango_precio'] == 4),'Margen_s_Facturacion']
-colors = ["red", "green", "yellow", "blue"]
-plt.hist([dataset_Histo_1, dataset_Histo_2, dataset_Histo_3, dataset_Histo_4], bins = 20, alpha = 0.5, color=colors)
+dataset_Histo_5 = datafile.loc[(datafile['rango_precio'] == 5),'Margen_s_Facturacion']
+colors = ["red", "green", "yellow", "blue","brown"]
+plt.hist([dataset_Histo_1, dataset_Histo_2, dataset_Histo_3, dataset_Histo_4, dataset_Histo_5], bins = 20, alpha = 0.5, color=colors)
 handles = [Rectangle((0,0),1,1,color=c,ec="k") for c in colors]
-labels= ["BAJO","MEDIO", "ALTO", "MIX"]
+labels= ["BAJO","MEDIO-BAJO","MEDIO-ALTO", "ALTO","MIX"]
 plt.legend(handles, labels)
 plt.xlabel('Margen sobre Facturación',fontsize=10)
 plt.ylabel('Frecuencia',fontsize=10)
