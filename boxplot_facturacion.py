@@ -33,6 +33,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 # Creating boxplot
 #plt.boxplot(datafile)
 #plt.xticks([1, 2, 3,4,5,6,7], ['Gama_Productos','rango_precio','Facturacion','Margen_Bruto','Facturacion_s_#Producto','Margen_s_#Producto','Margen_s_Facturacion'])
+
 #Gama de Productos - ok
 #plt.boxplot(datafile['Gama_Productos'])
 #plt.ylabel('Cantidad de Productos',fontsize=10)
@@ -41,6 +42,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #plt.xticks(fontsize=0)
 #plt.yticks(fontsize=8)
 #plt.show()
+
 #Facturación - ok
 #plt.boxplot(datafile['Facturacion'])
 #plt.ylabel('Facturación',fontsize=10)
@@ -49,6 +51,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #plt.xticks(fontsize=0)
 #plt.yticks(fontsize=8)
 #plt.show()
+
 #Margen_Bruto - ok
 #plt.boxplot(datafile['Margen_Bruto'])
 #plt.ylabel('Margen_Bruto (USD)',fontsize=10)
@@ -57,6 +60,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #plt.xticks(fontsize=0)
 #plt.yticks(fontsize=8)
 #plt.show()
+
 #Margen_s_#Productos - ok
 #plt.boxplot(datafile['Facturacion_s_#Producto'])
 #plt.ylabel('Facturacion_s_#Producto (USD)',fontsize=10)
@@ -65,6 +69,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #plt.xticks(fontsize=0)
 #plt.yticks(fontsize=8)
 #plt.show()
+
 #Margen_s_Facturacion
 #plt.boxplot(datafile['Margen_s_Facturacion'])
 #plt.ylabel('Margen_s_Facturacion (%)',fontsize=10)
@@ -81,6 +86,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #ax = fig.gca()
 #datafile.hist(ax=ax)
 #plt.show()
+
 # Facturacion - ok
 #hist = datafile["Facturacion"].hist(bins=100)
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
@@ -94,6 +100,7 @@ print(datafile[['Gama_Productos','Facturacion','Margen_Bruto','Facturacion_s_#Pr
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
 #plt.title("Facturacion")
 #plt.show()
+
 # Rango de precios
 hist = datafile["rango_precio"].hist(bins=15)
 plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=5)
@@ -103,6 +110,7 @@ plt.xticks(fontsize=8)
 plt.yticks(fontsize=8)
 plt.title("Histograma Rango de Precios")
 plt.show()
+
 # Gama de Productos - ok
 #hist = datafile["Gama_Productos"].hist(bins=100)
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
@@ -112,6 +120,7 @@ plt.show()
 #plt.yticks(fontsize=8)
 #plt.title("Histograma - Gama de Productos")
 #plt.show()
+
 # Margen
 #hist = datafile["Margen_Bruto"].hist(bins=100)
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
@@ -121,6 +130,7 @@ plt.show()
 #plt.yticks(fontsize=8)
 #plt.title("Histograma - Margen Bruto")
 #plt.show()
+
 # Facturacion s Producto
 #hist = datafile["Facturacion_s_#Producto"].hist(bins=100)
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
@@ -130,6 +140,7 @@ plt.show()
 #plt.yticks(fontsize=8)
 #plt.title("Histograma - Facturación sobre #Producto")
 #plt.show()
+
 # Margen s/Facturacion
 #hist = datafile["Margen_s_Facturacion"].hist(bins=100)
 #plt.savefig("pandas_hist_01.png", bbox_inches='tight', dpi=10)
@@ -145,6 +156,7 @@ plt.show()
 #plt.yticks(fontsize=8)
 #plt.title("Histograma - Margen sobre Facturacion")
 #plt.show()
+
 #Histogram with multiple variables
 dataset_Histo_1 = datafile.loc[(datafile['rango_precio'] == 1),'Margen_s_Facturacion']
 dataset_Histo_2 = datafile.loc[(datafile['rango_precio'] == 2),'Margen_s_Facturacion']
