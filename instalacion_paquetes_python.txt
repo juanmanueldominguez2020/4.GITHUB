@@ -1,0 +1,8 @@
+- desde Anaconda Promp
+
+conda activate tpf_juanma
+
+pip install pyclustertend
+
+
+pip install pyclustertend --ignore-installed llvmlite
